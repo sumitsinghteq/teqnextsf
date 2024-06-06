@@ -2,4 +2,4 @@
     <lightning:card title="Hello World">
         <!-- Contact list goes here -->
     </lightning:card>
-</aura:component>	
+</aura:component>
