@@ -1,0 +1,36 @@
+<!-- leadSearchComponent.html -->
+<template>
+    <lightning-card  title="Lead Search">
+    <div class="slds-m-horizontal_x-small">
+    <lightning-card>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+                <lightning-combobox label="Specialization" value={selectedSpecialization} options={specializationOptions} onchange={handleSpecializationChange}></lightning-combobox>
+            </div>
+            <div class="slds-col">
+                <lightning-input label="Region" value={region} onchange={handleRegionChange}></lightning-input>
+            </div>
+            <div class="slds-col slds-m-top_large">
+                
+                <lightning-button label="Search" onclick={handleSearch}></lightning-button>
+            </div>
+        </div>
+        
+    </lightning-card>
+</div>
+    <template if:true={leads}>
+        <div style="height: 200px;">
+            <lightning-datatable
+                key-field="Id"
+                data={leads}
+                columns={columns}
+                onrowselection={handleRowSelection}
+                >
+            </lightning-datatable>
+            </div>
+            <div class="slds-align_absolute-center">
+                <lightning-button label="Save" onclick={handleSave}></lightning-button>
+            </div>
+    </template>
+</lightning-card>
+</template>

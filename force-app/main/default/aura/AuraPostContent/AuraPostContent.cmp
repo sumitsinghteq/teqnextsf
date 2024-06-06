@@ -1,0 +1,5 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId,flexipage:availableForAllPageTypes">
+    <lightning:card title="Hello World">
+        <!-- Contact list goes here -->
+    </lightning:card>
+</aura:component>	
