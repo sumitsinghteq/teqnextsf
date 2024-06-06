@@ -16,7 +16,7 @@ public class LeadTriggerHelper {
             }
         }
 		
-        System.debug('leadconver last list size:==>'+leadConverts.size());
+        //System.debug('leadconver last list size:==>'+leadConverts.size());
         if (!leadConverts.isEmpty()) {
              try {
                 leadConvertResults = Database.convertLead(leadConverts, false);
